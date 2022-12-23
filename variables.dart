@@ -22,4 +22,8 @@ void main(){
   print("Hello ${name}, ${age} years old");
   print("Hello $name, $age years old");
 
+  // reassign 
+  name = "Tim";
+  print(name);
+
 }
