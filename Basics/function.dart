@@ -15,7 +15,7 @@ int mult(int a, int b){
 
 // optional parameters wrapped by [], ex. [int number=20]
 String sayHi([String? name="Denniel"]){
-  return "Hi ${name}";
+  return "Hi $name";
 }
 
 void main(){
@@ -26,8 +26,10 @@ void main(){
   // call func and pass arguments
   add(10, 20);
 
-  // call func with return type, same thing with the other type just replace.
-  print(mult(10, 10));
+  // call func with return type, same thing with the other type just replace and can also
+  // store the return value to a variable
+  int answer = mult(10, 20);
+  print(answer);
 
   print(sayHi());
   print(sayHi("Nyel"));
